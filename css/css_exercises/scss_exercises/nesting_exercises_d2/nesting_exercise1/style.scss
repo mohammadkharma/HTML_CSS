@@ -1,0 +1,132 @@
+$my-value-0: 0;
+$my-percentage-100: 100%;
+$my-alignment-center: center;
+$my-font-family1: Arial, Helvetica, sans-serif;
+$my-border-color-gray: .1rem solid rgba(128, 128, 128, 0.808);
+$my-display-flex: flex;
+$my-decoration-none: none;
+$my-rem-1rem: 1rem;
+$my-flex-flow-column: column nowrap;
+$my-flex-flow-row: row wrap;
+
+* {
+    margin: $my-value-0;
+    border: $my-value-0;
+    padding: $my-value-0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10rem; 
+    width: $my-percentage-100;
+    background-color: rgba(0, 0, 255, 0.356);
+    text-align: $my-alignment-center;
+    padding-top: 3.25rem;
+    
+    h1 {
+        font-family: $my-font-family1;
+        color: black;
+    } 
+}
+
+
+
+nav {
+    border-bottom: $my-border-color-gray;
+
+    ul {
+        display: $my-display-flex;
+        justify-content: $my-alignment-center;
+
+        li {
+            list-style: $my-decoration-none;
+            padding: $my-rem-1rem;
+
+            a {
+                text-decoration: $my-decoration-none;
+                font-family: $my-font-family1;
+                font-size: $my-rem-1rem;
+            
+            &:link {
+                color: grey;
+
+                &:visited {
+                    color: rgba(128, 0, 128, 0.877);
+
+                    &:hover {
+                        transform: scale(1.1);
+                        }
+
+                    }
+                } 
+            }  
+        }
+    }
+}
+
+
+
+main {
+    padding: 2rem;
+    flex-flow: $my-flex-flow-column;
+
+    .main-text, aside {
+        width: $my-percentage-100;
+
+        h2 {
+            font-family: $my-font-family1;
+            margin-bottom: $my-rem-1rem;
+
+            p {
+                margin: 0.5rem;
+            }
+        }
+
+        aside {
+            border: $my-border-color-gray;
+            padding: .5rem;
+        }
+    }
+}
+
+
+section {
+    display: $my-display-flex;
+    flex-flow: $my-flex-flow-column;
+    justify-content: $my-alignment-center;
+
+    img {
+        border: $my-border-color-gray;
+        margin: $my-rem-1rem;
+        height: 20rem;
+    }
+}
+
+
+
+footer {
+    padding: .5rem;
+    background-color: rgba(128, 128, 128, 0.288);
+    margin-top: $my-rem-1rem;
+    border-top: $my-border-color-gray;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        display: $my-display-flex; 
+        flex-flow: $my-flex-flow-row;
+        justify-content: $my-alignment-center;
+
+        .main-text {
+            width: 60%;
+        }
+        aside {
+            width: 30%;       
+        }
+    }
+    
+    section {
+        flex-flow: $my-flex-flow-row; 
+    }
+    
+}

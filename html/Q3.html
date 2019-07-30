@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   a {
+       display: block;
+       border: 1px solid black;
+       padding: 20px;
+       width:450px;
+       height: 10px;
+   }
+    a[target="specific"] {
+        background-color: rgb(231, 171, 58);
+        
+
+    }
+    a[target="empty"] {
+        background-color: rgb(231, 171, 58);
+
+    }
+    a.fluffy {
+        background-color: rgb(211, 135, 160);
+    }
+    
+    </style>
+</head>
+<body>
+    <a href="">This is a link with no target attribute</a>
+    <br>
+    <a href="http://www.disney.com" target="specific">
+        This is a link with a <i><b>specific</b></i> target attribute</a>
+        <br>
+        <a href="http://www.disney.com" target="empty">
+            This is a link with an <i><b>empty</b></i> target attribute</a>
+        <br>
+        <a href="#" class="fluffy">
+            This is a link with a fluffy attribute!</a>
+</body>
+</html>

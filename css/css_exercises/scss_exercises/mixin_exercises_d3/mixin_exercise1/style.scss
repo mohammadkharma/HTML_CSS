@@ -1,0 +1,127 @@
+$value-0: 0;
+$center: center;
+$flex: flex;
+$none: none;
+$column-nowrap: column nowrap;
+$row-wrap: row wrap;
+
+
+@mixin flex-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-rows {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+* {
+    margin: $value-0;
+    border: $value-0;
+    padding: $value-0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 6rem;
+    text-align: $center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1.5rem;
+    h1, h2 {
+        font-size: 1rem;
+    }
+}
+
+.nav_links {
+    margin-top: 1rem;
+    display: $flex;
+    justify-content: $center;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 255, 0.514);
+    li {
+        padding:1rem;
+        list-style: $none;
+        a {
+            text-decoration: $none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+.main {
+    @include flex-columns;
+    flex-flow: column nowrap;
+    .section_text > h3 {
+        text-align: $center;
+    }
+    .section_text, .section_images {
+        margin: 1rem;
+    }
+    .section_images {
+        @include flex-columns;
+        img {
+            height: 12rem;
+            width: 18rem;
+            margin: 0 0.5rem 1rem 0.5rem
+        } 
+    }
+}
+
+.aside {
+    display: $flex;
+    flex-flow: $column-nowrap;
+    justify-content: $center;
+    margin: 1rem;
+    .first_aside, .second_aside, .third_aside, .fourth_aside {
+        border: 0.2rem solid rgba(0, 0, 255, 0.678);    
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.footer {
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 255, 0.678);
+    .footer_links {
+        display: $flex;
+        justify-content: $center;
+        margin-bottom: 1rem;
+        li {
+            padding:1rem;
+            list-style: $none;
+            a {
+                text-decoration: $none;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .section_images {
+        @include flex-rows;
+    }
+
+    .section_text {
+        width: 70%;
+    }
+
+    .aside {
+        @include flex-rows;
+        .first_aside, .second_aside, .third_aside, .fourth_aside {
+            width: 45%;
+            margin: 0.5rem;
+        } 
+    }    
+}

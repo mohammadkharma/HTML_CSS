@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+* {
+  font-family: 'Pacifico', cursive; }
+
+h1 {
+  text-align: center; }
+
+.banner {
+  background-image: url(francesca-hotchin-403643-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 6px solid #000;
+  border-bottom: 6px solid #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .banner .slogan {
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 6px solid #000;
+    display: flex;
+    width: 50vw;
+    height: 50vh; }
+    .banner .slogan span {
+      text-align: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 2em; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  font-size: 2em; }
+  .container .icon {
+    width: 35%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #000;
+    padding: 20px;
+    margin: 20px; }
+    .container .icon img {
+      width: 20vw;
+      height: 60vh;
+      display: block;
+      margin: auto; }

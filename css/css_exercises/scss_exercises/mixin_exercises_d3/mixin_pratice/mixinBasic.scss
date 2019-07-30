@@ -1,0 +1,49 @@
+@mixin paragraph {
+    color: blue;
+    font: {
+        size: 30px;
+        family: "Roboto";
+        weight: bold;
+    }
+}
+
+@mixin border {
+    border: {
+        color: yellow;
+        width: 5px;
+        style: dotted;
+    } 
+}
+
+@mixin nav {
+    background-color: pink;
+    border: {
+        color: rgb(170, 26, 50);
+        style: solid;
+    }
+    
+}
+
+@mixin box($border-color, $padding, $justify-content, $margin) {
+    display: flex;
+    border: 10px solid $border-color;
+    padding: $padding;
+    box-shadow: 0 0 30px black;
+    margin: $margin;
+    justify-content: $justify-content;
+}
+
+p {
+    @include border;
+    @include paragraph;
+}
+
+nav {
+    @include nav;
+}
+
+
+.container {
+    @include box(green, 10px, space-between, 30px);
+}
+

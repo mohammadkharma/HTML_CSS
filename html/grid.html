@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Exercise-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid {
+            margin: 0 auto;
+            width: 100%;
+        }
+    
+        .row {
+            width: 100%;
+            display: flex;
+            
+        }
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+        nav {
+            background-color: black;
+            color: white;
+            font-size: 80%;
+            font-weight: bold;
+            height: 5vh;
+            padding-top: 1vh;
+        }
+        ul {
+            list-style: none;
+        }
+        li.col-2 {
+            position: relative;
+            left: 1.5vw;
+        }
+        
+        div.first, div.row {
+            width: 80%;
+            margin: 5vh auto;
+        }
+        div.first {
+            background-color: rgb(217, 211, 248);
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+        div.first>* {
+            margin: 3vh 1vw;
+        }
+        .first>p.button {
+            padding-left: 1vw;
+        }
+        div.row {
+            text-align: center;
+            
+        }
+        div.row>div {
+            margin: 1vh;
+            border: solid 1px black;
+            box-shadow: 2px 2px 2px;
+        }
+        img {
+            width: 100%;
+        }
+        div.col-3>div {
+            background-color: rgb(217, 211, 248);
+            margin: 0;
+            padding: 1vh 0;
+        }
+        .button {
+            background-color: #3B5998;
+            color: white;
+            font-weight: bold;
+            width: 10vw;
+            margin: 2vh auto;
+            padding: 1vh 0;
+            border-radius: 3px;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+
+
+    <nav class="grid">
+        <ul class="row">
+            <li class="col-1"></li>
+            <li class="col-2">Grid\View Loyout</li>
+            <li class="col-5"></li>
+            <li class="col-3">
+                <ul class="row">
+                    <li class="col-3">Home</li>
+                    <li class="col-3">About</li>
+                    <li class="col-3">Services</li>
+                    <li class="col-3">Contact</li>
+                </ul>
+            </li>
+            <li class="col-1"></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="first">
+        <h1>A Warm Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora dolor asperiores maiores perspiciatis architecto!</p>
+        <p class="button">Call To Action!</p>
+    </div>
+
+
+    <div class="grid">
+        <div class="row">
+
+            <div class="col-3">
+                <img src="card.jpg">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id dignissimos possimus consectetur doloribus nisi unde ab quam quos vel!</p>
+                <div>
+                    <p class="button">Find Out More!</p>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <img src="card.jpg">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id dignissimos possimus consectetur doloribus nisi unde ab quam quos vel!</p>
+                <div>
+                    <p class="button">Find Out More!</p>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <img src="card.jpg">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id dignissimos possimus consectetur doloribus nisi unde ab quam quos vel!</p>
+                <div>
+                    <p class="button">Find Out More!</p>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <img src="card.jpg">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id dignissimos possimus consectetur doloribus nisi unde ab quam quos vel!</p>
+                <div>
+                    <p class="button">Find Out More!</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>

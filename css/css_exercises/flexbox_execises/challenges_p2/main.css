@@ -1,0 +1,90 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.c0 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.c0 {
+    border: 2px solid red;
+}
+
+.c1 {
+    background-color: purple;
+    height: 20vh;
+}
+
+.c2 {
+    background-color: blueviolet;
+    height: 20vh;
+}
+
+.c3 {
+    background-color: blue;
+    height: 20vh;
+}
+
+.c4 {
+    background-color: green;
+    height: 20vh;
+}
+
+.c5 {
+    background-color: yellow;
+    height: 20vh;
+}
+
+.c6 {
+    background-color: darkorange;
+    height: 20vh;
+}
+
+.c7 {
+    background-color: red;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .c0 { 
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 950px) {
+    .c0 {
+        display: flex;
+    }
+    .c1 {
+        width: 100%;
+    }
+    .c2 {
+        width: 100%;
+    }
+    .c6 {
+        width: 100%;
+    }
+    .c7 {
+        width: 100%;
+    }
+    .c3, .c4, .c5 {
+        flex-grow: 3;
+    }
+}
+
+@media only screen and (min-width: 951px) {
+    .c0 {
+        display: flex;
+    }
+    .c1, .c2, .c6, .c7 {
+        width: 50%;
+    }
+    .c3, .c4, .c5 {
+        width: 33.3%;
+    }
+}
+

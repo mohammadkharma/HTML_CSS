@@ -1,0 +1,323 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  background-color: #000000;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  background: black;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: 15%;
+}
+
+nav li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px white;
+}
+
+#home {
+  height: 1px;
+}
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 5rem;
+  margin-top: 5rem;
+  height: 80vh;
+}
+
+.container1 #headerItem1 {
+  line-height: 30%;
+}
+
+.container1 #headerItem1 i {
+  margin-bottom: 2rem;
+}
+
+.container1 #headerItem2 h2 {
+  text-shadow: 2px 2px 4px white;
+}
+
+.container1 #headerItem2 p {
+  padding-top: 5rem;
+}
+
+.container-header2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5rem;
+  height: 50vh;
+}
+
+.container-header2 div {
+  width: 40vw;
+  font-size: 11px;
+}
+
+.container-header2 div img {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin-right: 2rem;
+}
+
+.container-header2 .hobbies ul {
+  list-style: none;
+}
+
+/* TIMELINE AND STUDIES */
+#timelineAndStudies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#timelineAndStudies .timeline {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 200px;
+  width: 40vw;
+}
+
+#timelineAndStudies .container {
+  width: 38vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+}
+
+#timelineAndStudies .container .content {
+  border-left: 0;
+  width: 40vw;
+}
+
+#timelineAndStudies .container .content li {
+  list-style: none;
+}
+
+#timelineAndStudies .container .content li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#timelineAndStudies .container .content a:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px white;
+}
+
+#timelineAndStudies #studies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#timelineAndStudies #studies i {
+  font-size: 6rem;
+}
+
+#timelineAndStudies #studies .studies {
+  padding-left: 2rem;
+}
+
+.skillsAndWork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+  padding: 10px;
+}
+
+.container-skills {
+  width: 40vw;
+  padding: 10px;
+}
+
+.container-skills table {
+  margin-bottom: 50px;
+}
+
+.container-skills table th:not(#lang), .container-skills table td {
+  border: 1px solid white;
+  width: 80%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+}
+
+.container-skills ul {
+  padding-left: 30px;
+  font-size: 10px;
+}
+
+.container-skills .skillsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+}
+
+.container-skills .skillsItem p {
+  width: 24%;
+}
+
+.container-skills .container {
+  width: 48%;
+  background-color: #636363;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.container-skills .skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+.container-skills #html {
+  width: 90%;
+  height: 10px;
+  background-color: white;
+}
+
+.container-skills #css {
+  width: 70%;
+  height: 10px;
+  background-color: white;
+}
+
+.container-skills #js {
+  width: 50%;
+  height: 10px;
+  background-color: white;
+}
+
+.container-skills #photography {
+  width: 60%;
+  height: 10px;
+  background-color: white;
+}
+
+.container-skills #editing {
+  width: 50%;
+  height: 10px;
+  background-color: white;
+}
+
+.container-skills #ms {
+  width: 70%;
+  height: 10px;
+  background-color: white;
+}
+
+#work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#work h3 {
+  position: absolute;
+  right: 125px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  width: 40vw;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 8px;
+  background-image: url(white-sticky-note.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.grid-item a {
+  font-size: 12px;
+}
+
+.grid-item a:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 2px 2px 4px black;
+}
+
+#contact {
+  margin-top: 15rem;
+}
+
+.contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 70%;
+  padding: 10px;
+}
+
+.contact .contact-item {
+  text-align: center;
+}
+
+.contact .contact-item a {
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+  height: 20px;
+  font-size: 8px;
+}
+/*# sourceMappingURL=portfolio-2.css.map */

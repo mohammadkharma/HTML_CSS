@@ -1,0 +1,130 @@
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+#blue {
+    color: blue;
+}
+
+.background {
+    width: 300px;
+    height: 200px;
+    background-image: url(images/tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+[alt="Image 2"] {
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+.spans > span:nth-child(even) {
+    background-color: blue;
+}
+
+.relative {
+    position: relative;
+    left: 160px;
+}
+
+.absolute {
+    position: absolute;
+    top: 77px;
+}
+
+main {
+    margin-top: 12rem;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.wrapper {
+    display: grid;
+    width: 30rem;
+    height: 30rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    border: 1px solid black;
+    grid-gap: 5px;
+}
+
+.wrapper > div {
+    border: 1px solid blue;
+}
+
+.celltwo {
+    grid-row: 2/4;
+}
+
+.cellthree {
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+.cellseven {
+    grid-column: 2/4;
+}
+
+.h3 {
+    color: blue;
+    font-size: 3rem;
+    font-family: fantasy;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+li {
+    text-decoration: line-through;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .mediaquery {
+        height: 5rem;
+        width: 5rem;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mediaquery {
+        height: 7rem;
+        width: 7rem;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .mediaquery {
+        height: 10rem;
+        width: 10rem;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mediaquery {
+        height: 12rem;
+        width: 12rem;
+        background-color: purple;
+    }
+}

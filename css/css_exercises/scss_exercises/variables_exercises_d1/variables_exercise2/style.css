@@ -1,0 +1,34 @@
+header {
+  text-align: center; }
+
+ul, li, a {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 2vh;
+  text-decoration: none; }
+
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-between; }
+
+.portion {
+  display: flex; }
+
+article, aside, section {
+  margin: 4vh; }
+
+img {
+  width: 300px; }
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .portion {
+    display: flex;
+    flex-direction: column; }
+  img {
+    width: 250px; } }

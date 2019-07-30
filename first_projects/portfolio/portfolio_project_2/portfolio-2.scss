@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: #000000;
+}
+
+
+
+// NAV
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  background: black;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin-left: 15%;
+      }
+      li a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 4px white;
+    }     
+}
+
+
+
+// HOME HEADER
+#home {
+  height: 1px;
+}
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    height: 80vh;
+    #headerItem1 {
+      line-height: 30%;
+      i {
+        margin-bottom: 2rem;
+      }
+    }
+    #headerItem2 {
+      h2 {
+        text-shadow: 2px 2px 4px white;
+      }
+      p {
+      padding-top: 5rem;
+    }
+  }
+}
+
+
+
+// HOME PART 2 
+// PERSONAL STATEMENT AND HOBBIES
+.container-header2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  height: 50vh;
+  div {
+    width: 40vw;
+    font-size: 11px;
+    img {
+      height: 150px;
+      width: 150px;
+      float: left;
+      margin-right: 2rem;
+    }
+  }
+  .hobbies ul {
+    list-style: none;
+  }
+}
+/* TIMELINE AND STUDIES */
+#timelineAndStudies {
+  display: flex;
+  justify-content: space-around;
+  .timeline {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
+    width: 40vw;
+  }
+  .container {
+  width: 38vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  .content {
+    border-left: 0;
+    width: 40vw;
+    li {
+      list-style: none;
+      a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none; 
+        }
+    } 
+      a:hover {
+        text-decoration: none;
+        color: white;
+        text-shadow: 2px 2px 4px white;
+      }     
+    }
+  }
+  #studies {
+    display: flex;
+    i {
+      font-size: 6rem;
+    }
+    .studies {
+      padding-left: 2rem;
+    }
+  }
+}
+
+
+
+// SKILLS AND WORK
+.skillsAndWork {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding: 10px;
+}
+// SKILLS
+.container-skills {
+  width: 40vw;
+  padding: 10px;
+  table {
+    margin-bottom: 50px;
+    th:not(#lang), td {
+      border: 1px solid white;
+      width: 80%;
+      font-size: 12px;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  ul {
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  .skillsItem {
+    display: flex;
+    font-size: 12px;
+    p {
+      width: 24%;
+    }
+  }
+  .container {
+    width: 48%;
+    background-color: rgb(99, 99, 99);
+    height: 10px;
+    margin-top: 5px;
+  }  
+  .skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+  }
+  #html {width: 90%; height: 10px; background-color: white;}
+  #css {width: 70%; height: 10px; background-color: white;}
+  #js {width: 50%; height: 10px; background-color: white;}
+  #photography {width: 60%; height: 10px; background-color: white;}
+  #editing {width: 50%; height: 10px; background-color: white;}
+  #ms {width: 70%; height: 10px; background-color: white;}
+}
+// WORK
+#work {
+  display: flex;
+  h3 {
+    position: absolute;
+    right: 125px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 40vw;
+  margin-top: 10px;
+  padding: 20px;
+}
+.grid-item {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 8px;
+  background-image: url(white-sticky-note.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  color: black;
+  a {
+    font-size: 12px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+  }    
+}
+
+
+
+// CONTACT
+#contact {
+  margin-top: 15rem;;
+}
+.contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 70%;
+  padding: 10px;
+  .contact-item {
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
+}
+
+
+
+// FOOTER
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+  height: 20px;
+  font-size: 8px;
+}
+
+

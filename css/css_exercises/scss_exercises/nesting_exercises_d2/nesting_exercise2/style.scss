@@ -1,0 +1,166 @@
+$value: 0;
+$center: center;
+$flex: flex;
+$none: none;
+$my-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$rem-1: 1rem;
+$rem-2: 2rem;
+$border: 2px solid #dad6ab;
+$flex-flow: row nowrap;
+
+
+* {
+    margin: $value;
+    padding: $value;
+    border: $value;
+    box-sizing: border-box;
+}
+
+
+nav {
+    ul {
+        display: $flex;
+        justify-content: $center;
+        align-items: $center;
+        height: 4rem;
+        li {
+            list-style: $none;
+            padding: 1rem;
+            a {
+                color: #0e749e;
+                text-decoration: $none;
+                font-size: 1.2rem;
+                font-family: $my-font-family;
+            }
+        }
+    }
+}
+
+
+header {
+    height: 20rem;
+    background-image: url(images_website/header.jpg);
+    background-size: cover;
+    text-align: $center;
+    padding: $rem-2;
+    margin-bottom: $rem-1;
+    h1 {
+        font-family: $my-font-family;
+        font-size: $rem-2;
+    }
+} 
+
+
+.img-mountain {
+    background-image: url(images_website/mountain.jpg);
+}
+
+.img-surfer {
+    background-image: url(images_website/surfer.jpg);
+}
+
+.img-tree {
+    background-image: url(images_website/tree.jpg);
+}
+
+.img {
+    background-size: cover;
+    height: 10rem;
+    width: 100%;
+    background-position: $center;
+
+}
+.cards, .card {
+    display: $flex;
+    flex-flow: column nowrap;
+    align-items: $center; 
+    .card {
+        padding: $rem-1;
+        background-color: #e0ddb2;
+        margin: $rem-1;
+        border: $border;
+        border-radius: 5px;
+        .card-text {
+            padding-top: $rem-1;
+            font-family: $my-font-family;
+        }
+    }
+}
+
+
+main {
+    display: $flex; 
+    flex-flow: column;
+    justify-content: $center;
+    margin: $rem-1;
+    aside, article {
+        padding: $rem-1;
+        font-size: $rem-1;
+        font-family: $my-font-family;
+    }
+    aside {
+        border: $border;
+    }
+}
+
+
+footer  > ul {
+    display: $flex;
+    justify-content: $center;
+    height: 4rem;
+    background-color: #016690;
+    li {
+        list-style: $none;
+        padding: $rem-1;
+        a {
+            text-decoration: $none;
+            color: #fff;
+            font-size: 1.2rem;
+            font-family: $my-font-family;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-flow: $flex-flow;
+        align-items: flex-start;
+        width: 80%;
+        margin: 0.5rem;
+        .card-text {
+            padding: 0 $rem-1 $rem-1 $rem-1;
+        }
+    }
+
+    nav > ul {
+        justify-content: flex-end;
+    }
+
+    main {
+        flex-flow: $flex-flow;
+        article {
+            width: 50%;
+        }
+    
+        aside {
+            width: 25%;
+        }
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        flex-flow: row wrap;
+        justify-content: $center;
+        .card {
+            width: 45%;
+            .img {
+                width: 40%;
+            }
+            .card-text {
+                width: 60%;
+            }
+        }
+    }
+}

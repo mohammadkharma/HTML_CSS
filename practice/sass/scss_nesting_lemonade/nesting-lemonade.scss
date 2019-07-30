@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+$my-value-20px: 20px;
+$my-alignment-center: center;
+$my-border: 6px solid #000;
+$my-display-flex: flex;
+$my-margin-auto: auto;
+
+
+
+* {
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    text-align: $my-alignment-center;
+    }
+
+.banner {
+    background-image: url(francesca-hotchin-403643-unsplash.jpg);
+    background-position: $my-alignment-center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: $my-border;
+    border-bottom: $my-border;
+    height: 100vh;
+    display: $my-display-flex;
+    align-items: $my-alignment-center;
+    justify-content: $my-alignment-center;
+
+    .slogan {
+        align-items: $my-alignment-center;
+        justify-content: $my-alignment-center;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: $my-border;
+        display: $my-display-flex;
+        width: 50vw;
+        height: 50vh;
+
+        span {
+            text-align: $my-alignment-center;
+            justify-content: $my-alignment-center;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    }
+}
+
+
+
+
+
+.container {
+    display: $my-display-flex;
+    justify-content: $my-alignment-center;
+    text-align: $my-alignment-center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: $my-margin-auto;
+    font-size: 2em;
+
+    .icon {
+        width: 35%;
+        height: 80vh;
+        justify-content: $my-alignment-center;
+        align-items: $my-alignment-center;
+        border: $my-border;
+        padding: $my-value-20px;
+        margin: $my-value-20px;
+
+        img {
+            width: 20vw;
+            height: 60vh;
+            display: block;
+            margin: $my-margin-auto;
+        }   
+    }  
+}
+
+
+
