@@ -1,4 +1,6 @@
-.square {
+/* animations */
+
+.animation {
     width: 100px;
     height: 100px;
     position: relative;
@@ -12,41 +14,117 @@
     animation-fill-mode: forwards;
 }
 
-.circle {
-    width: 150px;
-    height: 80px;
-    background-color: yellow;
-    transform: skewY(1.5deg);
-}
-
 @keyframes example {
-  0% {transform: skew(10deg,10deg)}
- 3%{transform: skew(20deg,20deg)}
-6% {transform: skew(30deg,30deg)}
-9% {transform: skew(40deg,40deg)}
-12% {transform: skew(45deg,45deg)}
-18%{transform: skew(50deg,50deg)}
-24%{transform: skew(60deg,60deg)}
-30% {transform: skew(70deg,70deg)}
-36% {transform: skew(80deg,80deg)}
-42% {transform: skew(90deg,90deg)}
-48% {transform: skew(100deg,100deg)}
-54% {transform: skew(110deg,110deg)}
-60% {transform: skew(120deg,120deg)}
-66% {transform: skew(130deg,130deg)}
-72% {transform: skew(140deg,140deg)}
-78% {transform: skew(150deg,150deg)}
-86% {transform: skew(160deg,160deg)}
-92% {transform: skew(170deg,170deg)}
-100% {transform: skew(180deg,180deg)}
-
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: purple;
+        left: 0px;
+        top: 0px;
+    }
 }
 
-/* 
-  transform:
-  translate: moves
-  rotate: rotate
-  scale: resize
-  skew: pressure
+/* transform */
 
-  */
+.transform {
+    max-width: 10vw;
+    font-size: 2.5vw;
+    height: auto;
+    position: relative;
+    top: 49vh;
+    left: 49vw;
+    background-color: yellow;
+    animation: skew 10s ease-in 2s 1 normal;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(10deg, 10deg);
+    }
+    3% {
+        transform: skew(20deg, 20deg)
+    }
+    6% {
+        transform: skew(30deg, 30deg)
+    }
+    9% {
+        transform: skew(40deg, 40deg)
+    }
+    12% {
+        transform: skew(45deg, 45deg);
+    }
+    18% {
+        transform: skew(50deg, 50deg)
+    }
+    24% {
+        transform: skew(60deg, 60deg)
+    }
+    30% {
+        transform: skew(70deg, 70deg)
+    }
+    36% {
+        transform: skew(80deg, 80deg)
+    }
+    42% {
+        transform: skew(90deg, 90deg);
+    }
+    48% {
+        transform: skew(100deg, 100deg)
+    }
+    54% {
+        transform: skew(110deg, 110deg)
+    }
+    60% {
+        transform: skew(120deg, 120deg)
+    }
+    66% {
+        transform: skew(130deg, 130deg)
+    }
+    72% {
+        transform: skew(140deg, 140deg);
+    }
+    78% {
+        transform: skew(150deg, 150deg)
+    }
+    86% {
+        transform: skew(160deg, 160deg)
+    }
+    92% {
+        transform: skew(170deg, 170deg)
+    }
+    100% {
+        transform: skew(180deg, 180deg)
+    }
+}
+
+/* transition */
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+  }
+  
+  .transition:hover {
+    width: 300px;
+    height: 300px;
+  }
