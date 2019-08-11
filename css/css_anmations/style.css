@@ -1,14 +1,57 @@
-div {
+.square {
     width: 100px;
     height: 100px;
+    position: relative;
     background-color: red;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 4s;
-  }
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
 
-  @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  }
+.circle {
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    transform: skewY(1.5deg);
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: purple;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* 
+  transform:
+  translate: moves
+  rotate: rotate
+  scale: resize
+  skew: pressure
+
+  */
